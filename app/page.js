@@ -20,6 +20,7 @@ function App() {
   }, []);
 
   const register = () => {
+    console.log("1111111")
     api.post('/register', { username, password }).then(response => {
       console.log(response.data);
     }).catch(error => {

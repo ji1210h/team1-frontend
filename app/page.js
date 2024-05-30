@@ -30,7 +30,7 @@ function App() {
 
   const login = () => {
     api.post('/login', { username, password }).then(response => {
-      console.log("로그인!!!!!!!");
+      console.log(response.data);
       setUser({ username }); // 사용자 이름을 객체로 설정
     }).catch(error => {
       console.error(error.response.data);

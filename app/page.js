@@ -24,6 +24,7 @@ function App() {
     api.post('/register', { username, password }).then(response => {
       console.log(response.data);
     }).catch(error => {
+      console.log("에러!!!!!!!!!")
       console.error(error.response.data);
     });
   };
